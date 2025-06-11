@@ -3,5 +3,11 @@ class ImagesController < ApplicationController
   end
 
   def style    
-  end  
+  end
+
+  def payment
+  end
+
+  def processing
+  end
 end

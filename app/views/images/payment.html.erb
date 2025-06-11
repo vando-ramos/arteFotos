@@ -1,0 +1,83 @@
+<div class="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 px-6 py-12">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-white mb-4">
+        Finalize seu pedido
+      </h1>
+      <p class="text-white/80 text-lg">
+        Últimas etapas para transformar suas fotos em arte!
+      </p>
+    </div>
+
+    <div class="grid gap-6">
+      <div class="rounded-lg border text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-white/20 p-6">
+        <h3 class="text-xl font-semibold text-white mb-4">Resumo do pedido</h3>
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between text-white/90">
+            <span>Quantidade de fotos:</span>
+            <span>1</span>
+          </div>
+          <div class="flex justify-between text-white/90">
+            <span>Estilo selecionado:</span>
+            <span>Anime</span>
+          </div>
+          <div class="flex justify-between text-white/90">
+            <span>Preço por foto:</span>
+            <span>R$ 2.99</span>
+          </div>
+          <div class="border-t border-white/20 pt-3">
+            <div class="flex justify-between text-white font-semibold text-lg">
+              <span>Total:</span>
+              <span>R$ 2.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-green-500/20 border border-green-500/30 rounded-lg p-4">
+          <h4 class="text-green-300 font-semibold mb-2 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 mr-2">
+              <path d="M20 6 9 17l-5-5"></path>
+            </svg>
+            O que está incluído:
+          </h4>
+          <ul class="text-green-200 text-sm space-y-1">
+            <li>• 1 fotos transformadas em alta qualidade</li>
+            <li>• PDF organizado para download</li>
+            <li>• Processamento em até 5 minutos</li>
+            <li>• Suporte técnico incluso</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rounded-lg border text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-white/20 p-6">
+        <div class="flex items-center space-x-3 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-green-400">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+          </svg>
+          <h3 class="text-lg font-semibold text-white">Pagamento 100% seguro</h3>
+        </div>
+        <p class="text-white/80 text-sm">
+          Seus dados estão protegidos com criptografia SSL e processamento via Stripe.
+          Não armazenamos informações do seu cartão.
+        </p>
+      </div>
+
+      <%= link_to processing_images_path do %>
+        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-11 rounded-md px-8 w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-4 text-lg cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-5 h-5 mr-2">
+            <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+            <line x1="2" x2="22" y1="10" y2="10"></line>
+          </svg>
+          Pagar R$ 2.99
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+      <% end %>
+
+      <p class="text-white/60 text-center text-sm">
+        Ao continuar, você concorda com nossos termos de uso e política de privacidade.
+      </p>
+    </div>
+  </div>
+</div>
