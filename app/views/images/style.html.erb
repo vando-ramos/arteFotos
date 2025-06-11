@@ -1,0 +1,157 @@
+<div class="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-white mb-4">Escolha seu estilo artístico</h1>
+      <p class="text-white/80 text-lg">Selecione como você quer que suas N fotos sejam transformadas</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&amp;h=300&amp;fit=crop" alt="Anime" class="w-full h-48 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-500 opacity-60"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Anime</h3>
+          <p class="text-white/80 text-sm">Transforme suas fotos em personagens de anime</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <%= image_tag(
+                  "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=300&h=300&fit=crop",
+                  alt: "Aquarela",
+                  class: "w-full h-48 object-cover"
+                ) %>
+
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-60"></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-2">Aquarela</h3>
+          <p class="text-white/80 text-sm">Estilo suave e artístico de aquarela</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <%= image_tag "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=300&h=300&fit=crop", 
+                alt: "Pintura a Óleo", 
+                class: "w-full h-48 object-cover" %>
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-500 opacity-60"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                  class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 
+                        0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668
+                        h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Pintura a Óleo</h3>
+          <p class="text-white/80 text-sm">Clássico estilo de pintura a óleo</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <%= image_tag "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=300&h=300&fit=crop",
+                alt: "Pop Art",
+                class: "w-full h-48 object-cover" %>
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 opacity-60"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                stroke-linecap="round" stroke-linejoin="round" 
+                class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 
+                  0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 
+                  1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-2">Pop Art</h3>
+          <p class="text-white/80 text-sm">Estilo vibrante e colorido do pop art</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <%= image_tag "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop", alt: "Cartoon", class: "w-full h-48 object-cover" %>
+            <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 opacity-60"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Cartoon</h3>
+          <p class="text-white/80 text-sm">Transforme em personagem de desenho animado</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg text-card-foreground shadow-sm bg-white/10 backdrop-blur-sm border-2 cursor-pointer transition-all duration-300 hover:scale-105 border-white/20 hover:border-white/40">
+        <div class="p-6">
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=300&amp;h=300&amp;fit=crop" alt="Esboço" class="w-full h-48 object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-500 to-slate-500 opacity-60"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-12 h-12 text-white">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Esboço</h3>
+          <p class="text-white/80 text-sm">Estilo de desenho a lápis artístico</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
